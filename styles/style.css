@@ -1,1 +1,45 @@
-/* место для вашего кода */
+body {
+    margin: 0;
+    font-family: Raleway;
+    font-weight: 400;
+    background-color: #a7a6a6;
+    width: 1100px;
+    height: 3028px;
+    }
+
+header {
+    background-color: #FFFFFF;
+    
+   }
+
+.content_section {
+   display: grid;
+   grid-template-columns:repeat(3, 1fr);
+   grid-template-rows: 1fr;
+   max-width: 1052px;
+   max-height: 105px;
+   padding: 92px 24px;
+   }
+
+.header__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+
+
+
+
+/* overlay 
+
+position: absolute;
+width: 1100px;
+height: 757px;
+left: 0px;
+top: 0px;
+
+background: #000000;
+opacity: 0.6; */
