@@ -1,35 +1,77 @@
 body {
     background-color: #a7a6a6;
-    width: 1100px;
-    }
+}
 
-header {
+.header {
     display: grid;
     background-color: #FFFFFF;
-    grid-template-columns: 1.51fr 2fr 1.5fr;
+    grid-template-columns: 1fr min-content 1fr;
     grid-template-rows: 1fr;
     align-items: center;
-   }
+    padding: 92px 50px;
+}
 
 .header__menu {
    display: flex;
-   justify-content: center;
+   justify-content: space-between;
+   font-size: 18px;
+   letter-spacing: 0.2px;
 }
 
 .header__links-list {
     display: flex;
-    gap: 30px;
+    gap: 32px;
 }
 
 .header__logo {
     display: block;
     justify-self: center;
     align-self: center;
-    width: 140px;
-  }
+    }
+
+.header__logo-image {
+    width: 130px;
+    height: 105px;
+}
+
+.address {
+  width: 100%;
+  max-width: 240px;
+  height: 100px;
+  justify-self: end;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 1.4;
+} 
+
+.address_tel {
+    text-decoration: none;
+}
+
+.li {
+    list-style-type: none; 
+}
+
+.header__links-list-item {
+    list-style: circle; 
+    
+}
+
+.header__links-list-item_no-bullit {
+    list-style-type: none;
+}
+
+ .cover {
+    background-image: url(../images/cover.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
 
 
 
+
+
+ 
 
 
 /* overlay 
@@ -42,3 +84,14 @@ top: 0px;
 
 background: #000000;
 opacity: 0.6; */
+
+
+/* lotus-flower */
+
+position: absolute;
+width: 1100px;
+height: 757px;
+left: 0px;
+top: 0px;
+
+background: url(oil-painting-beautiful-lotus-flower_1232-1978.jpg);
