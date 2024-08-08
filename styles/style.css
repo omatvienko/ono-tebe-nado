@@ -122,19 +122,22 @@ body {
   position: relative;
   z-index: 1;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  gap: 82px;
   font-family: "Raleway", sans-serif;
   font-size: 22px;
   color: #fff;
-  padding: 0 50px 51px 50px;
+  padding: 0 50px 51px 78px;
 }
 
 .cover__description-text {
   text-transform: uppercase;
   word-spacing: 0.9em;
   line-height: 28px;
+}
+
+.cover__letter-text {
+  letter-spacing: 0.8em;
 }
 
 .bet-button {
