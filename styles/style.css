@@ -65,19 +65,17 @@ body {
 
 .cover {
   position: relative;
-  z-index: -1;
   background-image: url(../images/cover.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  max-height: 757px;
+  min-height: 757px;
 }
 
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
   width: 100%;
   height: 100%;
   opacity: 0.6;
@@ -90,9 +88,9 @@ body {
   font-weight: bold;
   font-size: 100px;
   position: relative;
-  z-index: 2;
-  letter-spacing: 30px;
-  padding: 165px 50px 237px 50px;
+  z-index: 1;
+  letter-spacing: 0.3em;
+  padding: 165px 50px 134px 50px;
 }
 
 .aligned-text {
@@ -113,29 +111,30 @@ body {
 }
 
 .letter-spacing-extended {
-  letter-spacing: 60px;
+  letter-spacing: 0.6em;
 }
 
 .remove-spacing {
-  letter-spacing: normal;
+  letter-spacing: initial;
 }
 
 .cover__description {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 136px 0 0;
-  gap: 79px;
+  gap: 82px;
   font-family: "Raleway", sans-serif;
   font-size: 22px;
   color: #fff;
+  padding: 0 50px 51px 50px;
 }
 
 .cover__description-text {
   text-transform: uppercase;
-  word-spacing: 19px;
+  word-spacing: 0.9em;
+  line-height: 28px;
 }
 
 .bet-button {
@@ -151,7 +150,6 @@ body {
 .lots {
   position: relative;
   padding: 0 25px;
-  z-index: -1;
 }
 
 .lots__heading {
@@ -183,7 +181,6 @@ body {
 
 .card {
   position: relative;
-  z-index: -1;
   background-position: center;
   display: flex;
   flex-direction: column;
@@ -213,7 +210,7 @@ body {
 
 .card__title {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   color: #fff;
   font-size: 22px;
   font-weight: bold;
@@ -224,7 +221,7 @@ body {
 
 .card__text {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   color: #fff;
   font-size: 20px;
   line-height: 1.3;
