@@ -287,18 +287,22 @@ body {
   line-height: 24px;
 }
 
+.about__text p {
+  margin-bottom: 10px;
+}
+
+.about__text p:last-child {
+  margin-bottom: 0;
+}
+
 .text-up {
   padding-right: 20px;
-  position: relative;
-  left: 0;
   bottom: 15px;
 }
 
 .text-down {
   letter-spacing: 0.005px;
-  position: relative;
   top: 9px;
-  left: 0;
   padding-right: 10px;
 }
 
