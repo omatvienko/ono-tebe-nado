@@ -1,5 +1,3 @@
-/* Владимир, прошу прощения за невнимательность, только осваиваюсь с функциями образовательной площадки. В прошлый раз я открыла комментарии только файла html, а про файл css не догадалась. Надеюсь, в этот раз получилось исправить все ошибки) */
-
 body {
   background-color: #fff;
 }
@@ -10,6 +8,7 @@ body {
   grid-template-rows: 1fr;
   align-items: center;
   padding: 92px 51px;
+  
 }
 
 .header__menu {
@@ -67,11 +66,11 @@ body {
 
 .cover {
   position: relative;
+  min-height: 757px;
   background-image: url(../images/cover.jpg);
-  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 757px;
+  background-size: cover;
 }
 
 .overlay {
@@ -85,14 +84,14 @@ body {
 }
 
 .cover__title {
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 100px;
   position: relative;
   z-index: 1;
+  padding: 165px 50px 135px 50px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 100px;
   letter-spacing: 0.3em;
-  padding: 165px 50px 134px 50px;
+  text-transform: uppercase;
 }
 
 .text {
@@ -100,18 +99,18 @@ body {
 }
 
 .aligned-text {
-  line-height: 115%;
   justify-content: start;
+  line-height: 115%;
 }
 
 .aligned-text_center {
-  line-height: 140%;
   justify-content: center;
+  line-height: 140%;
 }
 
 .aligned-text_right {
-  line-height: 100%;
   justify-content: end;
+  line-height: 100%;
 }
 
 .letter-spacing-extended {
@@ -128,16 +127,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 2px 50px 50px 78px;
+  color: #fff;
   font-family: "Raleway", sans-serif;
   font-size: 22px;
-  color: #fff;
-  padding: 0 50px 51px 78px;
 }
 
 .cover__description-text {
+  line-height: 28px;
   text-transform: uppercase;
   word-spacing: 20px;
-  line-height: 28px;
 }
 
 .cover__letter-text {
@@ -145,14 +144,14 @@ body {
 }
 
 .bet-button {
-  color: #fff;
-  font-size: 22px;
-  font-weight: normal;
   border: 1px #fff solid;
-  background-color: transparent;
-  text-transform: uppercase;
   padding: 12px 31px;
+  color: #fff;
   font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+  text-transform: uppercase;
+  background-color: transparent;
 }
 
 .lots {
@@ -161,42 +160,46 @@ body {
 }
 
 .lots__heading {
-  font-size: 40px;
+  padding: 176px 0px 28px 40px;
   font-weight: bold;
+  font-size: 40px;
+  line-height: 47px;
   text-transform: uppercase;
-  padding: 183px 0px 30px 40px;
-  line-height: 1;
 }
 
 .lots__card-list {
   display: flex;
-  column-gap: 25px;
-  row-gap: 25px;
+  gap: 25px;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .lots__card-list-item {
   height: 100%;
 }
 
+.lots__card-list li {
+  flex-grow: 1;
+}
+
 .card-link {
   display: block;
+  height: 100%;
   text-decoration: none;
   background-size: cover;
-  height: 100%;
 }
 
 .card {
   position: relative;
-  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 334px;
-  padding: 52px 40px 48px 40px;
   min-height: 563px;
-  background-size: cover;
+  padding: 52px 40px 48px 40px;
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .card_type_film {
@@ -215,8 +218,8 @@ body {
   position: relative;
   z-index: 1;
   color: #fff;
-  font-size: 22px;
   font-weight: bold;
+  font-size: 22px;
   text-decoration: underline;
   text-underline-offset: 3px;
   text-transform: uppercase;
@@ -234,14 +237,13 @@ body {
   display: block;
   padding: 30px 0 10px 40px;
   font-size: 20px;
-  text-decoration: underline;
-  text-underline-offset: 5px;
-  text-decoration-thickness: 1px;
   line-height: 23px;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
 }
 
 .about {
-  width: 1100px;
   padding: 171px 24px 0px 24px;
 }
 
@@ -249,19 +251,18 @@ body {
   display: grid;
   grid-template-columns: 334px 1fr;
   grid-template-rows: auto auto;
-  align-items: center;
-  gap: 25px;
+  gap: 8px 25px;
 }
 
 .about__logo {
-  border-radius: 50%;
-  background-color: #000000;
-  width: 240px;
-  height: 240px;
-  justify-self: center;
   display: flex;
+  justify-self: center;
   justify-content: center;
   align-items: center;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background-color: #000000;
 }
 
 .about__logo-image {
@@ -270,62 +271,46 @@ body {
 }
 
 .about__title {
-  font-size: 40px;
-  font-weight: bold;
-  line-height: 46px;
-  color: #000000;
-  text-transform: uppercase;
   align-self: center;
-  padding-top: 10px;
+  padding-top: 11px;
+  color: #000000;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  text-transform: uppercase;
 }
 
 .about__text {
   grid-column: 2 / 3;
-  grid-row: 2 / 3;
-  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.about__paragraph {
   font-weight: normal;
+  font-size: 20px;
   line-height: 24px;
-}
-
-.about__text p {
-  margin-bottom: 10px;
-}
-
-.about__text p:last-child {
-  margin-bottom: 0;
-}
-
-.text-up {
-  padding-right: 20px;
-  bottom: 15px;
-}
-
-.text-down {
-  letter-spacing: 0.005px;
-  top: 9px;
-  padding-right: 10px;
 }
 
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
   align-items: center;
-  padding: 140px 50px 83px 50px;
+  padding: 130px 50px 83px 50px;
 }
 
 .footer address {
   justify-self: flex-start;
-  padding-top: 44px;
+  padding-top: 42px;
 }
 
 .footer__menu {
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding: 24px 0 15px 0;
   font-size: 18px;
   letter-spacing: 0.2px;
-  padding: 23px 0 15px 0;
 }
 
 .footer__menu-list {
@@ -347,14 +332,14 @@ body {
 
 .footer__social-list {
   display: flex;
-  justify-content: flex-end;
   flex-direction: row;
+  justify-content: flex-end;
   gap: 48px;
 }
 
 .footer__social-list-item {
-  list-style-type: none;
   padding: 50px 0;
+  list-style-type: none;
 }
 
 .footer__social-icon {
