@@ -32,7 +32,7 @@ body {
 
 .header__link {
   text-decoration: underline;
-  text-underline-offset: 5px;
+  text-underline-offset: 4px;
 }
 
 .header__link_active {
@@ -46,7 +46,7 @@ body {
 }
 
 .header__logo-image {
-  width: 130px;
+  width: 148px;
   height: 105px;
 }
 
@@ -56,7 +56,7 @@ body {
   font-style: normal;
   line-height: 24px;
   letter-spacing: 0.2px;
-  text-underline-offset: 5px;
+  text-underline-offset: 4px;
 }
 
 .header__address {
@@ -128,7 +128,6 @@ body {
   align-items: center;
   padding: 2px 50px 50px 78px;
   color: #fff;
-  font-family: "Raleway", sans-serif;
   font-size: 22px;
 }
 
@@ -144,10 +143,9 @@ body {
 
 .bet-button {
   border: 1px #fff solid;
-  padding: 12px 31px;
+  padding: 10px 32px;
   color: #fff;
   font-family: "Raleway", sans-serif;
-  font-weight: normal;
   font-size: 22px;
   text-transform: uppercase;
   background-color: transparent;
@@ -159,8 +157,7 @@ body {
 }
 
 .lots__heading {
-  padding: 176px 0px 28px 40px;
-  font-weight: bold;
+  padding: 179px 0px 27px 40px;
   font-size: 40px;
   line-height: 47px;
   text-transform: uppercase;
@@ -183,7 +180,6 @@ body {
 
 .card-link {
   display: block;
-  height: 100%;
   text-decoration: none;
   background-size: cover;
 }
@@ -220,7 +216,7 @@ body {
   font-weight: bold;
   font-size: 22px;
   text-decoration: underline;
-  text-underline-offset: 3px;
+  text-underline-offset: 4px;
   text-transform: uppercase;
 }
 
@@ -265,14 +261,12 @@ body {
 
 .about__logo-image {
   width: 148px;
-  height: 114px;
 }
 
 .about__title {
   align-self: center;
   padding-top: 11px;
   color: #000000;
-  font-weight: 700;
   font-size: 40px;
   line-height: 47px;
   text-transform: uppercase;
@@ -286,7 +280,6 @@ body {
 }
 
 .about__paragraph {
-  font-weight: normal;
   font-size: 20px;
   line-height: 24px;
 }
@@ -295,7 +288,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  padding: 130px 50px 83px 50px;
+  padding: 131px 50px 83px 50px;
 }
 
 .footer address {
@@ -321,7 +314,7 @@ body {
 
 .footer__menu-link {
   text-decoration: underline;
-  text-underline-offset: 5px;
+  text-underline-offset: 4px;
 }
 
 .footer__menu-link_active {
@@ -333,9 +326,6 @@ body {
   flex-direction: row;
   justify-content: flex-end;
   gap: 48px;
-}
-
-.footer__social-list-item {
   padding: 50px 0;
   list-style-type: none;
 }
